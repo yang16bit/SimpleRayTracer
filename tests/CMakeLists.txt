@@ -5,18 +5,18 @@ project( catch_testcases CXX )
 #get_filename_component(DIR_PARENT ${CMAKE_CURRENT_SOURCE_DIR} PATH)
 
 set( SOURCES_VECTOR
-        vector.cpp
+        Vector.cpp
         ../Vector.cpp
         )
 
 set( SOURCES_MATRIX
-        matrix.cpp
+        Matrix.cpp
         ../Matrix.cpp
         ../Vector.cpp
         )
 
 set( SOURCES_MATRIX2
-        matrix2.cpp
+        Matrix2.cpp
         ../Matrix2.cpp
         ../Vector2.cpp
         )

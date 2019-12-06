@@ -3,6 +3,7 @@
 #define CH4_IMAGE24_HPP
 
 #include <cstdint>
+#include <cstdlib>
 
 struct Color {
   uint8_t r, g, b;

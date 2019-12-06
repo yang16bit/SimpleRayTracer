@@ -3,6 +3,7 @@
 #define CH4_VECTOR_HPP
 
 #include <cstdint>
+#include <cstdlib>
 
 struct Vector {
   float x, y, z;

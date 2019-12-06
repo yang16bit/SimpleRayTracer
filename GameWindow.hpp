@@ -1,7 +1,6 @@
 #pragma once
-#include "Window.hpp"
-
 #include "Scene.hpp"
+#include "Window.hpp"
 
 class GameWindow : public Window {
  public:
@@ -15,4 +14,5 @@ class GameWindow : public Window {
   // void OnPaint() override;
   void Blit(const void* bits, const unsigned int width,
             const unsigned int height);
+  void* sdl_surface = nullptr;
 };

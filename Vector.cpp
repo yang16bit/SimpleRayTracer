@@ -1,4 +1,5 @@
 #include "Vector.hpp"
+
 #include <cmath>
 
 float &Vector::Component(size_t index) {

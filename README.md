@@ -7,21 +7,35 @@ A simple ray tracing based software renderer at children's play level, created f
 ## Features
 
 - Written in C++, applying C with class diagram.
-- Fully portable except the OS-related GUI parts.
+- Crossing platforms by utilizing SDL2.
 - Based on ray-object Intersecting test.
 - Lighting & Shadow
-- ...
 
 ## Build & Run
 
 ### Requirements
 
-- Windows
-- MinGW or MSVC (Visual Studio 2017)
+- Acknowledgement of compiling
+- Linux or Windows. (Other desktop systems not tested.)
+- GCC or MinGW or MSVC (Visual Studio 2017)
 - CMake
-- Catch (a unit testing framework)
+- third party library: Catch2, SDL2.
 
-### For MinGW
+### Build
+
+#### For Linux and GCC
+
+```shell
+git clone REPO-URL
+cd REPO-NAME
+mkdir build-gcc
+cd build-gcc
+cmake -DCMAKE_BUILD_TYPE=Release -G "Makefiles" ..
+make
+./app
+```
+
+#### For MinGW
 
 ```shell
 mkdir build-mingw
@@ -31,7 +45,7 @@ mingw32-make -j 4
 start app
 ```
 
-### For MSVC
+#### For MSVC
 
 ```shell
 mkdir build-msvc
@@ -40,5 +54,10 @@ cmake .. -G "Visual Studio 15 2017"
 start app.sln
 ```
 
+### USAGE
+
+```shell
+app [WIDTH HEIGHT]
+```
 
 

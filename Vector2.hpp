@@ -1,7 +1,7 @@
 #ifndef CH4_VECTOR2_HPP
 #define CH4_VECTOR2_HPP
 
-#include <cstdint>
+#include <cstdlib>
 
 struct Vector2 {
   float x, y;

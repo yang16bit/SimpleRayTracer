@@ -2,6 +2,7 @@
 
 #include <cmath>
 #include <vector>
+
 #include "Camera.hpp"
 #include "Light.hpp"
 #include "Visible.hpp"

@@ -1,11 +1,11 @@
 #include "Scene.hpp"
 
+#include <cmath>
+
 #include "Polygon.hpp"
 #include "Sphere.hpp"
-#include "Triangle.hpp"
-
-#include <cmath>
 #include "SpotLight.hpp"
+#include "Triangle.hpp"
 
 #define PI 3.1415926535897932384626f
 
@@ -18,7 +18,7 @@ Scene::Scene(const unsigned int width, const unsigned int height) {
   Color orange{246, 155, 100};
   Color white{233, 233, 233};
   Color black{22, 22, 22};
-  
+
   this->visibles.push_back(new Sphere(Vector{0.f, 2.f, 0.f}, 1.f, blue));
   this->visibles.push_back(new Sphere(Vector{1.2f, .5f, 0.f}, .5f, green));
   this->visibles.push_back(
@@ -85,8 +85,7 @@ Scene::~Scene() {
   for (auto& light : lights) delete light;
 }
 
-void Scene::Update() {
-}
+void Scene::Update() {}
 
 void Scene::Shoot() {
   static bool shooted = false;

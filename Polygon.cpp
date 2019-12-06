@@ -1,9 +1,11 @@
 #include "Polygon.hpp"
+
 #include <cassert>
 #include <cmath>
 #include <cstring>
+
+#include "Matrix2.hpp"
 #include "Vector2.hpp"
-#include "matrix2.hpp"
 
 Polygon::Polygon(const Vector* points, const size_t length, const Color& color)
     : Visible(Vector{}, color), length(length) {

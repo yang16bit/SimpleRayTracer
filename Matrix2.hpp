@@ -22,7 +22,7 @@ struct Matrix2 {
   Matrix2 operator*(const Matrix2& m) const;
   void operator*=(const Matrix2& m);
   Vector2 operator*(const Vector2& v) const;
-  bool operator==(const Matrix2& A);
+  bool operator==(const Matrix2& A) const;
 
   float GetDet() const;
   Vector2 SolveLinearEquasSys(const Vector2& v) const;

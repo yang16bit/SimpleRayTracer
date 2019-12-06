@@ -32,7 +32,7 @@ class Matrix {
   Vector operator*(const Vector& v) const;
   Matrix operator*(const Matrix& A) const;
   void operator*=(const Matrix& A);
-  bool operator==(const Matrix& A);
+  bool operator==(const Matrix& A) const;
 
   // [M][x]=[v], function returns [x]
   Vector SolveLinearEquasSys(const Vector& v) const;

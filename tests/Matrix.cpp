@@ -1,7 +1,7 @@
-#include <catch.hpp>
-
-#include <limits>
 #include "../Matrix.hpp"
+
+#include <catch2/catch.hpp>
+#include <limits>
 TEST_CASE("Matrix operators", "[Matrix]") {
   Matrix A{Vector{1, 0, 0}, Vector{0, 1, 0}, Vector{0, 0, 1}};
   Matrix A2{Vector{2, 0, 0}, Vector{0, 2, 0}, Vector{0, 0, 2}};

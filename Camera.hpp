@@ -2,6 +2,7 @@
 
 #include <cmath>
 #include <vector>
+
 #include "Image24.hpp"
 #include "Light.hpp"
 #include "Visible.hpp"

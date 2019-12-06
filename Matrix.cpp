@@ -28,8 +28,8 @@ Matrix Matrix::operator*(const Matrix &A) const {
 
 void Matrix::operator*=(const Matrix &A) { *this = (*this) * A; }
 
-bool Matrix::operator==(const Matrix &A) {
-  Matrix &B = *this;
+bool Matrix::operator==(const Matrix &A) const {
+  Matrix const &B = *this;
   return A.x == B.x && A.y == B.y && A.z == B.z;
 }
 

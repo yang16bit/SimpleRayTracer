@@ -1,4 +1,4 @@
-#include "matrix2.hpp"
+#include "Matrix2.hpp"
 
 Matrix2 Matrix2::operator*(const Matrix2 &m) const {
   return Matrix2{(*this) * m.vecs[0], (*this) * m.vecs[1]};
@@ -21,4 +21,6 @@ Vector2 Matrix2::SolveLinearEquasSys(const Vector2 &v) const {
   return Vector2{Matrix2{v, v2}.GetDet() / det, Matrix2{v1, v}.GetDet() / det};
 }
 
-bool Matrix2::operator==(const Matrix2 &A) { return v1 == A.v1 && v2 == A.v2; }
+bool Matrix2::operator==(const Matrix2 &A) const {
+  return v1 == A.v1 && v2 == A.v2;
+}

@@ -4,6 +4,7 @@
 #include <cmath>
 #include <cstdint>
 #include <limits>
+
 #include "Vector.hpp"
 
 inline float LERP(float x, float x0, float x1, float y0, float y1) {

@@ -1,6 +1,6 @@
-#include <catch.hpp>
-
 #include "../Vector.hpp"
+
+#include <catch2/catch.hpp>
 
 TEST_CASE("Vector operators", "[Vector]") {
   Vector v{1, 2, 3};
