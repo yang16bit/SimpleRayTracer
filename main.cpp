@@ -2,7 +2,7 @@
 
 #include "GameWindow.hpp"
 
-int main(int argc, char const *argv[]) {
+int main(int argc, char *argv[]) {
   unsigned width = 320, height = 240;
   {
     unsigned w, h;
